@@ -69,7 +69,7 @@ function displayProducts() {
             </div>
 
             <div class="col-3">
-                <button onclick="visit()" class="btn btn-success btn-sm px-4">visit</button>
+                <a href="${container[i].url}" class="btn btn-success btn-sm px-4">visit</a>
 
             </div>
 
