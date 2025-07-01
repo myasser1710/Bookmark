@@ -1,0 +1,12 @@
+
+body
+{
+    background-color: #F7ECDE;
+}
+
+
+.product img
+{
+    height: 100px;
+    object-fit: contain;
+}

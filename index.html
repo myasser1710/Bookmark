@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+    
+<h1 class="text-center my-5 ">Bookmarker</h1>
+
+<div class="w-75 mx-auto  p-3 mb-4  border-top border-bottom border-danger ">
+
+    <span><i class="fa-solid fa-book-bookmark mx-2"></i>Site Name </span> 
+    <div class="form-floating mb-5 mt-2  ">
+        <input oninput="validateInputs(this)" id="siteName" type="text" class="form-control border-2 shadow "  placeholder="site name" >
+        <div id="inputError" class="alert alert-danger mt-3 d-none ">Please insure name is at least three characters !</div>
+        <label for="siteName">Bookmark Name</label>
+    </div>
+
+    <span><i class="fa-solid fa-link pe-2"></i>Site URL </span> 
+    <div class="form-floating mb-2  mt-2">
+        <input oninput="validateInputs(this)" id="siteUrl" type="text" class="form-control border-2 shadow " placeholder="site url">
+        <div id="inputError" class="alert alert-danger mt-3 d-none ">Please insure inserting valid URL !</div>
+        <label for="siteUrl">Site URL</label>
+    </div>
+
+
+    <button id="addBtn" onclick="AddProduct()" class="btn btn-danger text-white rounded mx-auto d-block mt-5 px-5">Submit</button>
+    <!-- <button id="updateBtn" onclick="updateProduct()" class="btn btn-warning d-none text-dark my-2 rounded">update product</button> -->
+
+
+</div>
+    
+<div class="container w-75 ">
+    
+    <div id="rowData" class="row  text-center  mb-5">
+        <div class="row col-12 bg-white border-bottom  px-0 py-3 border-2 ">
+            <div class="col-3 ">
+                <span>Index</span>
+            </div>
+
+            <div class="col-3">
+                <span>Website Name</span>
+            </div>
+
+            <div class="col-3">
+                <span>Visit</span>
+            </div>
+
+            <div class="col-3">
+                <span>Delete</span>
+            </div>
+        </div>
+
+        <div id="contain" class="row">
+
+        </div>
+
+        
+
+
+        
+        
+    </div>
+</div>
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
